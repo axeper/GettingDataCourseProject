@@ -11,9 +11,9 @@ Following the instructions of the assignment, we get an 10299 x 68 dataset with 
 ## tidySet2.csv
 
 Using the information of tidySet1.csv, it was asked to create a second, independent tidy data set with the average of each variable for each activity and each subject.
-This results in a 180(30 subjects * 6 activities) x 68 dataset (subject, activity and 66 features).
+This results in a 180 (30 subjects * 6 activities) x 68 dataset (subject, activity and 66 features).
 
-The structure is the same as tidySet1.csv. The difference resides in the fact that each value of the features was averaged for a subject and an activity. We then have 180 observations rather than 10299. See "run_analysis.R" for more details.
+The structure is the same as tidySet1.csv. The difference resides in the fact that each value of the features was averaged for a specific subject and a specific activity.
 
 
 

@@ -83,10 +83,10 @@ tidySet2$activitylabel <- rep(unname(activityNames), times = 30)
 # Splitting the data for each subject and each activity
 sp <- split(tidyMeanStd, list(tidyMeanStd$activitylabel,tidyMeanStd$subject))
 
-# We can now iterate upon sp to fill the datafram
+# We can now iterate upon sp to fill the dataframe
 for (idx in seq(length(sp))) {
     temp <- sapply(sp[[idx]], mean)
-    # Remove the two first columns
+    # Remove the two first columns (they are already correct)
     tidySet2[idx,-c(1,2)] <- temp[-c(1,2)]
 }
 
@@ -94,6 +94,6 @@ for (idx in seq(length(sp))) {
 
 ## Exporting the two data sets
 print("Exporting the two datasets into ./tidydata/")
-write.csv(tidyMeanStd, file = paste0(tidyDir,"/tidySet1.csv"))
-write.csv(tidySet2, file = paste0(tidyDir,"/tidySet2.csv"))
+write.csv(tidyMeanStd, file = paste0(tidyDir,"/tidySet1.csv"), row.names = FALSE)
+write.csv(tidySet2, file = paste0(tidyDir,"/tidySet2.csv"), row.names = FALSE)
 
