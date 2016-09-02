@@ -94,6 +94,6 @@ for (idx in seq(length(sp))) {
 
 ## Exporting the two data sets
 print("Exporting the two datasets into ./tidydata/")
-write.csv(tidyMeanStd, file = paste0(tidyDir,"/tidySet1.txt"), row.names = FALSE)
-write.csv(tidySet2, file = paste0(tidyDir,"/tidySet2.txt"), row.names = FALSE)
+write.table(tidyMeanStd, file = paste0(tidyDir,"/tidySet1.txt"), row.names = FALSE)
+write.table(tidySet2, file = paste0(tidyDir,"/tidySet2.txt"), row.names = FALSE)
 

@@ -1,4 +1,4 @@
-## tidySet1.csv
+## tidySet1.txt
 
 It is the resulting concatenation from the train and test set from the "UCI HAR Dataset".
 Following the instructions of the assignment, we get an 10299 x 68 dataset with the columns:
@@ -8,12 +8,12 @@ Following the instructions of the assignment, we get an 10299 x 68 dataset with 
 * Features: we kept from the original dataset either the mean value '-mean()' and the standard deviation '-std()' of the signals. '-XYZ' is used to denote 3-axial signals in the X, Y and Z directions. More informations on the features can be found below.
 
 
-## tidySet2.csv
+## tidySet2.txt
 
-Using the information of tidySet1.csv, it was asked to create a second, independent tidy data set with the average of each variable for each activity and each subject.
+Using the information of tidySet1.txt, it was asked to create a second, independent tidy data set with the average of each variable for each activity and each subject.
 This results in a 180 (30 subjects * 6 activities) x 68 dataset (subject, activity and 66 features).
 
-The structure is the same as tidySet1.csv. The difference resides in the fact that each value of the features was averaged for a specific subject and a specific activity.
+The structure is the same as tidySet1.txt. The difference resides in the fact that each value of the features was averaged for a specific subject and a specific activity.
 
 
 
